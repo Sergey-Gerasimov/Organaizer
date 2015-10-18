@@ -53,13 +53,13 @@
     }
 ## DELETE /apiv1/reminders/{id}
 Удаляет напоминание с заданным id. Если напоминания с таким id не существует, то выдаётся код 404.
-## POST /apiv1/reminders/id/{id}?action=add
+## POST /apiv1/reminders/id/{id}
 Позволяет добавить нового модератора для заданного напоминания. Если это действие выполняет пользователь, которого нет в списке "moderators" то выдаётся код 401.
 ### Input example
     {
        "Admin_best_friend"
     }
-## POST /apiv1/reminders/id/{id}?action=remove
+## DELETE /apiv1/reminders/id/{id}
 Позволяет удалять модератора для заданного напоминания. Если это действие выполняет пользователь, которого нет в списке "moderators" то выдаётся код 401.
 ### Input example (id)
     {
